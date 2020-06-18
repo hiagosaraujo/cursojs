@@ -1,6 +1,5 @@
 var listElement = document.querySelector('#lista ul');
-var inputElement = document.querySelector('#lista input');
-var buttonElement = document.querySelector('#lista button');
+
 
 var nomes = [
     'Diego',
@@ -21,13 +20,3 @@ function renderNomes() {
 }
 
 renderNomes();
-
-function adicionar() {
-    var nomeText = inputElement.value;
-
-    nomes.push(nomeText);
-    inputElement.value = '';
-    renderNomes();
-}
-
-buttonElement.onclick = adicionar;
